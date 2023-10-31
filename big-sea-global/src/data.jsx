@@ -20,3 +20,10 @@ export const links = [
     url: '/portfolio',
   },
 ]
+
+export const contact = [
+  { id: 1, line: '07068129139' },
+  { id: 2, line: '07080072400' },
+  { id: 3, line: '08168027026' },
+  { id: 4, line: '09090991113' },
+]
