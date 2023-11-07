@@ -6,7 +6,7 @@ links
 const Footer = () => {
   return (
     <footer className='bg-linkColor py-12 '>
-      <div className='md:mx-28 flex justify-between'>
+      <div className='md:mx-16 lg:mx-28 sm:flex-row items-center flex-col flex justify-between'>
         <div>
           <img src={logo} alt='logo' className='w-[200px]' />
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col gap-2'>
           <h3 className='text-center text-[#fff] font-bold'>Contact us</h3>
-          <ul className='flex flex-col text-[#fff] capitalize'>
+          <ul className='flex flex-col text-[#fff] capitalize items-center'>
             {contact.map((item) => {
               const { id, line } = item
               return <li key={id}>{line}</li>

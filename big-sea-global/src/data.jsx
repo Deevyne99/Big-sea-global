@@ -27,3 +27,21 @@ export const contact = [
   { id: 3, line: '08168027026' },
   { id: 4, line: '09090991113' },
 ]
+
+export const products = [
+  {
+    id: 1,
+    img: '/assets/solar.jpg',
+    title: 'Security',
+  },
+  {
+    id: 2,
+    img: '/assets/image.jpg',
+    title: 'Installation',
+  },
+  {
+    id: 3,
+    img: '/assets/solar-installation.jpg',
+    title: 'Solar Installation',
+  },
+]

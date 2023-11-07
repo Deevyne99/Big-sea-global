@@ -22,28 +22,25 @@ const Navbar = () => {
               )
             })}
           </ul>
-          <button
-            className='md:hidden flex'
-            onClick={() => setSidebar((prev) => !prev)}
-          >
+          <button className='md:hidden flex' onClick={() => setSidebar(true)}>
             open
           </button>
           <aside
-            className={`md:hidden flex flex-col fixed w-[250px]   bg-[#F5F5F5] h-full translate-x-[500px]  transition-all right-0 top-0 duration-300 ${
-              sidebar ? 'translate-x-[0px]' : 'translate-x-[500px]'
+            className={`md:hidden flex flex-col fixed w-[250px]   bg-[#eee] h-full translate-x-[500px]  transition-all right-0 top-0 duration-300 ${
+              sidebar ? 'translate-x-[0]' : 'translate-x-[500px]'
             }`}
           >
             <button
-              className='md:hidden flex ml-auto mx-6 mt-4'
+              className=' mt-4 mr-auto mx-4'
               onClick={() => setSidebar((prev) => !prev)}
             >
-              open
+              close
             </button>
-            <ul className='md:hidden my-8 gap-8 flex flex-col capitalize text-linkColor font-semibold px-8'>
+            <ul className='md:hidden my-8 gap-8  flex flex-col capitalize text-linkColor font-semibold px-8'>
               {links.map((link) => {
                 const { id, name, url } = link
                 return (
-                  <NavLink key={id} to={url}>
+                  <NavLink key={id} to={url} onClick={() => setSidebar(false)}>
                     {name}
                   </NavLink>
                 )
