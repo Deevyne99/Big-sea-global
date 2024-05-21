@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { products } from '../data'
 
-// import React from 'react'
-
 const Hero = () => {
   const [items, setItems] = useState(products)
   const [productIndex, setProductIndex] = useState(0)
@@ -16,6 +14,7 @@ const Hero = () => {
       setProductIndex(0)
     }
   }, [productIndex, items])
+
   useEffect(() => {
     let slider = setInterval(() => {
       setProductIndex(productIndex + 1)
@@ -24,46 +23,40 @@ const Hero = () => {
   }, [productIndex])
 
   return (
-    <section className=' mb-12'>
-      <div
-        className={`flex justify-center items-center gap-8 relative w-full h-[400px]`}
-      >
-        <button onClick={() => setProductIndex(productIndex - 1)}>
-          click me
-        </button>
+    <section className='h-[300px] md:h-[600px] relative w-full flex flex-col overflow-hidden'>
+      <div className='flex justify-center items-center gap-8 relative w-full h-full'>
         {items.map((item, index) => {
           const { id, title, img } = item
-          let position = 'nextSlide'
+          let position = 'translate-x-full opacity-0'
+
           if (productIndex === index) {
-            position = 'activeSlide'
-          }
-          if (
+            position = 'translate-x-0 opacity-100'
+          } else if (
             index === productIndex - 1 ||
             (productIndex === 0 && index === items.length - 1)
           ) {
-            position = 'lastSlide'
+            position = '-translate-x-full opacity-0'
           }
+
           return (
             <div
               key={id}
-              className={`absolute top-0 left-0 flex md:flex-row flex-col     items-center  justify-center  w-full   transform transition duration-500   opacity-0 
-               ${
-                 position === 'activeSlide' ? 'translate-x-0 opacity-100' : ''
-               }         
-                ${position === 'nextSlide' ? 'translate-x-[100%] ' : ''}
-                ${position === 'lastSlide' ? 'translate-x-[-100%] ' : ''}`}
+              className={`absolute top-0 left-0 w-full h-full flex items-center justify-center transition-transform duration-500 ${position}`}
             >
               <img
                 src={img}
                 alt={title}
-                className='h-[400px]  w-full drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]'
+                className='h-full w-full object-cover filter blur-sm brightness-75'
               />
+              <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
+                <h2 className='font-bold text-2xl text-white max-w-[400px] text-center p-4 drop-shadow-lg text-[#fff]'>
+                  The best when it comes to installation, maintenance, and sales
+                  of ICT gadgets
+                </h2>
+              </div>
             </div>
           )
         })}
-        <button onClick={() => setProductIndex(productIndex + 1)}>
-          click me
-        </button>
       </div>
     </section>
   )

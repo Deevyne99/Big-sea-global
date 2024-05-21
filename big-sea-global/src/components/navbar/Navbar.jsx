@@ -1,14 +1,14 @@
 // import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { links } from '../../data'
 import logo from '../../assets/logo.png'
-import Footer from '../footer/Footer'
+// import Footer from '../footer/Footer'
 import { useState } from 'react'
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false)
   return (
-    <div className='fixed flex flex-col justify-between w-full '>
+    <div className='fixed flex flex-col justify-between w-full z-50 bg-[#FFF]'>
       <header className='w-full  p-3 shadow-lg  '>
         <nav className='flex  items-center   justify-between  md:mx-8'>
           <img src={logo} alt='logo' className='w-[170px]' />
@@ -49,8 +49,7 @@ const Navbar = () => {
           </aside>
         </nav>
       </header>
-      <Outlet />
-      <Footer />
+      {/* <Outlet /> */}
     </div>
   )
 }

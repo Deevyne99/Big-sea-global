@@ -5,7 +5,7 @@ import { links, contact } from '../../data'
 links
 const Footer = () => {
   return (
-    <footer className='bg-linkColor py-12 '>
+    <footer className='bg-linkColor py-12 flex flex-col relative'>
       <div className='md:mx-16 lg:mx-28 sm:flex-row items-center flex-col flex justify-between'>
         <div>
           <img src={logo} alt='logo' className='w-[200px]' />

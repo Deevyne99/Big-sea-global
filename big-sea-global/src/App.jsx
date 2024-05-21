@@ -31,11 +31,11 @@ function App() {
     <AppProvider>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Navbar />}>
-            <Route index element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
-          </Route>
+          <Route path='/' element={<Home />} />
+          {/* <Route index element={} /> */}
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          {/* </Route> */}
         </Routes>
       </BrowserRouter>
     </AppProvider>
