@@ -35,13 +35,13 @@ const Hero = () => {
             index === productIndex - 1 ||
             (productIndex === 0 && index === items.length - 1)
           ) {
-            position = '-translate-x-full opacity-0'
+            position = '-translate-x-full opacity-100'
           }
 
           return (
             <div
               key={id}
-              className={`absolute top-0 left-0 w-full h-full flex items-center justify-center transition-transform duration-500 ${position}`}
+              className={`absolute top-0 left-0 w-full h-full flex items-center justify-center transition-transform duration-300 ${position}`}
             >
               <img
                 src={img}

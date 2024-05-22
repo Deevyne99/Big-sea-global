@@ -2,6 +2,7 @@
 
 import About from '../../components/About/About'
 import Hero from '../../components/Hero'
+import Values from '../../components/Values/Values'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import Services from '../../components/services/Services'
@@ -24,6 +25,9 @@ const Home = () => {
       </div>
       <div>
         <Services />
+      </div>
+      <div>
+        <Values />
       </div>
       <div className='relative'>
         <Footer />
