@@ -23,7 +23,7 @@ const Hero = () => {
   }, [productIndex])
 
   return (
-    <section className='h-[300px] md:h-[600px] relative w-full flex flex-col overflow-hidden'>
+    <section className='h-[300px] md:h-screen relative w-full flex flex-col overflow-hidden'>
       <div className='flex justify-center items-center gap-8 relative w-full h-full'>
         {items.map((item, index) => {
           const { id, title, img } = item

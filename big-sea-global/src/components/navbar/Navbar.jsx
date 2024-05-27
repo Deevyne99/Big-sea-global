@@ -4,6 +4,7 @@ import { links } from '../../data'
 import logo from '../../assets/logo.png'
 // import Footer from '../footer/Footer'
 import { useState } from 'react'
+import { AiOutlineClose, AiOutlineAlignRight } from 'react-icons/ai'
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -23,30 +24,42 @@ const Navbar = () => {
             })}
           </ul>
           <button className='md:hidden flex' onClick={() => setSidebar(true)}>
-            open
+            <AiOutlineAlignRight className='text-linkColor text-xl' />
           </button>
-          <aside
-            className={`md:hidden flex flex-col fixed w-[250px]   bg-[#eee] h-full translate-x-[500px]  transition-all right-0 top-0 duration-300 ${
-              sidebar ? 'translate-x-[0]' : 'translate-x-[500px]'
+          <div
+            className={` transition-all duration-300 ${
+              sidebar
+                ? 'bg-[#000] bg-opacity-70 flex-col z-0 top-0 fixed left-0 w-full h-full flex translate-x-0'
+                : 'hidden'
             }`}
           >
-            <button
-              className=' mt-4 mr-auto mx-4'
-              onClick={() => setSidebar((prev) => !prev)}
+            <aside
+              className={`md:hidden  flex flex-col fixed w-[250px]   bg-[#FFF] h-full   transition-all right-0 top-0 duration-300  ${
+                sidebar ? 'translate-x-[0px] ' : 'translate-x-[500px]'
+              }`}
             >
-              close
-            </button>
-            <ul className='md:hidden my-8 gap-8  flex flex-col capitalize text-linkColor font-semibold px-8'>
-              {links.map((link) => {
-                const { id, name, url } = link
-                return (
-                  <NavLink key={id} to={url} onClick={() => setSidebar(false)}>
-                    {name}
-                  </NavLink>
-                )
-              })}
-            </ul>
-          </aside>
+              <button
+                className=' mt-4 mr-auto mx-4'
+                onClick={() => setSidebar((prev) => !prev)}
+              >
+                <AiOutlineClose className='text-linkColor text-xl' />
+              </button>
+              <ul className='md:hidden my-8 gap-8  flex flex-col capitalize text-linkColor font-semibold px-8'>
+                {links.map((link) => {
+                  const { id, name, url } = link
+                  return (
+                    <NavLink
+                      key={id}
+                      to={url}
+                      onClick={() => setSidebar(false)}
+                    >
+                      {name}
+                    </NavLink>
+                  )
+                })}
+              </ul>
+            </aside>
+          </div>
         </nav>
       </header>
       {/* <Outlet /> */}

@@ -6,6 +6,7 @@ import Values from '../../components/Values/Values'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import Services from '../../components/services/Services'
+import TestimonialSlider from '../../components/testimonial/Testimonial'
 
 // import Navbar from '../../components/navbar/Navbar'
 
@@ -28,6 +29,9 @@ const Home = () => {
       </div>
       <div>
         <Values />
+      </div>
+      <div>
+        <TestimonialSlider />
       </div>
       <div className='relative'>
         <Footer />

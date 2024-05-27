@@ -10,7 +10,7 @@ const About = () => {
           <h2 className='text-center text-xl capitalize font-bold text-[#0655A5]'>
             About us
           </h2>
-          <h4 className='text-center text-2xl font-bold '>
+          <h4 className='text-center text-2xl font-bold  text-[#FF5D02] capitalize'>
             We offer quality services
           </h4>
         </div>
