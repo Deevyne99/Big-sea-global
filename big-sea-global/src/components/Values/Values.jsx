@@ -16,7 +16,7 @@ const Values = () => {
             <div className='flex flex-col justify-center items-center'>
               <img src={dartBoard} alt='' className='w-[60px] h-[60px]' />
             </div>
-            <p className='text-center'>
+            <p className='text-center text-[#4b5563] leading-8 text-[15px]'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
               amet molestiae impedit dolores incidunt. Soluta qui, numquam in
               quam dolores, ipsum inventore maiores molestiae saepe dignissimos
@@ -28,7 +28,7 @@ const Values = () => {
             <div className='flex flex-col justify-center items-center'>
               <img src={dartBoard} alt='' className='w-[60px] h-[60px]' />
             </div>
-            <p className='text-center'>
+            <p className='text-center text-[#4b5563] leading-8 text-[15px]'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
               amet molestiae impedit dolores incidunt. Soluta qui, numquam in
               quam dolores, ipsum inventore maiores molestiae saepe dignissimos

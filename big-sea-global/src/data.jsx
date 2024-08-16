@@ -33,16 +33,19 @@ export const products = [
     id: 1,
     img: '/assets/solar.jpg',
     title: 'Security',
+    blurHash: 'LlC@Kto~Rjae.TbcofkCtTWDj[bH',
   },
   {
     id: 2,
     img: '/assets/image.jpg',
     title: 'Installation',
+    blurHash: 'LTM%_|4q_1^*~p%MM|xWXTR+t5ad',
   },
   {
     id: 3,
     img: '/assets/solar-installation.jpg',
     title: 'Solar Installation',
+    blurHash: 'LoHVYo?w%1M|%$%MM{jYNKM|Rjt6',
   },
 ]
 

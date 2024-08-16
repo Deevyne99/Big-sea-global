@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='flex justify-between text-[#fff]'>
           <div className='flex flex-col gap-1 text-[#fff]'>
             <h3 className='text-center font-bold'>Quick Links</h3>
-            <ul className='flex flex-col text-[#fff] capitalize items-center'>
+            <ul className='flex gap-4 flex-col text-[#fff] capitalize items-center'>
               {links.map((item) => {
                 const { id, name, url } = item
                 return (
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col gap-2'>
           <h3 className='text-center text-[#fff] font-bold'>Contact us</h3>
-          <ul className='flex flex-col text-[#fff] capitalize items-center'>
+          <ul className='flex gap-4 flex-col text-[#fff] capitalize items-center'>
             {contact.map((item) => {
               const { id, line } = item
               return <li key={id}>{line}</li>

@@ -19,7 +19,7 @@ const About = () => {
             <img src={image} alt='' />
           </div>
           <div className='flex flex-col md:w-1/2 w-full'>
-            <p className=''>
+            <p className='text-[#4b5563] leading-8 text-[15px]'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate corporis corrupti accusamus excepturi, ab tempora
               eligendi neque impedit exercitationem quidem temporibus sint,
@@ -29,7 +29,7 @@ const About = () => {
               repudiandae repellendus dicta molestiae!
             </p>
             <div className='flex gap-4 mt-4'>
-              <div className='h-[160px] w-[160px] bg-[#0655A5] rounded-md'>
+              <div className='h-[150px] w-[180px] bg-[#0655A5] rounded-md'>
                 <div className='flex flex-col justify-center items-center'>
                   <img
                     src={trophy}
@@ -41,7 +41,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className='h-[160px] w-[160px] bg-[#FF5D02] from-[#242221]'>
+              <div className='h-[150px] w-[180px] rounded-md bg-[#FF5D02] from-[#242221]'>
                 <div className='flex flex-col justify-center items-center'>
                   <img
                     src={loading}

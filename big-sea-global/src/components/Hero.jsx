@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react'
 import { products } from '../data'
 
 const Hero = () => {
-  const [items, setItems] = useState(products)
+  // const [items, setItems] = useState(products)
   const [productIndex, setProductIndex] = useState(0)
 
   useEffect(() => {
-    const lastIndex = items.length - 1
+    const lastIndex = products.length - 1
     if (productIndex < 0) {
       setProductIndex(lastIndex)
     }
     if (productIndex > lastIndex) {
       setProductIndex(0)
     }
-  }, [productIndex, items])
+  }, [productIndex])
 
   useEffect(() => {
     let slider = setInterval(() => {
@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <section className='h-[300px] md:h-screen relative w-full flex flex-col overflow-hidden'>
       <div className='flex justify-center items-center gap-8 relative w-full h-full'>
-        {items.map((item, index) => {
+        {products.map((item, index) => {
           const { id, title, img } = item
           let position = 'translate-x-full opacity-0'
 
@@ -33,7 +33,7 @@ const Hero = () => {
             position = 'translate-x-0 opacity-100'
           } else if (
             index === productIndex - 1 ||
-            (productIndex === 0 && index === items.length - 1)
+            (productIndex === 0 && index === products.length - 1)
           ) {
             position = '-translate-x-full opacity-100'
           }
@@ -49,7 +49,7 @@ const Hero = () => {
                 className='h-full w-full object-cover filter blur-sm brightness-75'
               />
               <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
-                <h2 className='font-bold text-2xl text-white max-w-[400px] text-center p-4 drop-shadow-lg text-[#fff]'>
+                <h2 className='font-bold text-4xl text-white max-w-[600px] text-center p-4 drop-shadow-lg text-[#fff] '>
                   The best when it comes to installation, maintenance, and sales
                   of ICT gadgets
                 </h2>
