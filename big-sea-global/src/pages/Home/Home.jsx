@@ -1,12 +1,14 @@
 // import React from 'react'
 
-import About from '../../components/About/About'
+// import About from '../../components/About/About'
 import Hero from '../../components/Hero'
+import Products from '../../components/Products/Product'
 import Values from '../../components/Values/Values'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import Services from '../../components/services/Services'
-import TestimonialSlider from '../../components/testimonial/Testimonial'
+// import TestimonialSlider from '../../components/testimonial/Testimonial'
+import VissionAndMission from '../../components/vissionAndMission/VissionAndMission'
 
 // import Navbar from '../../components/navbar/Navbar'
 
@@ -18,12 +20,12 @@ const Home = () => {
       <div>
         <Navbar />
       </div>
-      <div className='relative w-full '>
+      <div className=' w-full '>
         <Hero />
       </div>
-      <div className='flex flex-col '>
+      {/* <div className='flex flex-col '>
         <About />
-      </div>
+      </div> */}
       <div>
         <Services />
       </div>
@@ -31,7 +33,10 @@ const Home = () => {
         <Values />
       </div>
       <div>
-        <TestimonialSlider />
+        <VissionAndMission />
+      </div>
+      <div>
+        <Products />
       </div>
       <div className='relative'>
         <Footer />
