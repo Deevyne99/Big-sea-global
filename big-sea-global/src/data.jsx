@@ -58,6 +58,27 @@ export const products = [
     descp:
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
+  {
+    id: 4,
+    img: '/assets/solar-installation.jpg',
+    title: 'Solar Installation',
+    descp:
+      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 5,
+    img: '/assets/solar-installation.jpg',
+    title: 'Solar Installation',
+    descp:
+      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    id: 6,
+    img: '/assets/solar-installation.jpg',
+    title: 'Solar Installation',
+    descp:
+      'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
 ]
 
 export const allProducts = [
@@ -200,7 +221,7 @@ export const services = [
     title: 'Computer and Laptops',
     icon: <HiOutlineComputerDesktop />,
     description:
-      'We offer high-quality, reliable, and affordable computers and laptops, along with expert repair services. Whether you need a new device or a quick fix, we ensure top performance and efficiency for your home or business',
+      'We offer high-quality, reliable, and affordable computers and laptops, along with expert repair services. Whether you need a new device or a quick fix, we ensure top performance for your home or business',
   },
   {
     id: 5,

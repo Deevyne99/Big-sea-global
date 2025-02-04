@@ -52,15 +52,19 @@ const Hero = () => {
                   {title}
                 </h2>
                 <p className='text-[#94a3b8] w-full  p-2 tracking-wide leading-loose text-center md:text-left'>
-                  {descp}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolor alias molestiae libero nesciunt eum voluptates!
+                  Inventore sed possimus, sint cumque beatae, expedita quos
+                  magni repudiandae repellat accusantium velit? Reprehenderit,
+                  quasi.
                 </p>
-                <button className='p-2 flex justify-center items-center mt-8 bg-[#60a5fa] text-white font-semibold rounded-md w-[200px] mx-auto md:mx-0'>
+                <button className='p-2 flex justify-center items-center mt-8 bg-[#122a72] text-[#fff] font-semibold rounded-md w-[200px] mx-auto md:mx-0'>
                   Get Started
                 </button>
               </article>
               <div className='w-full order-1 md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
                 <div className='flex relative  md:flex-col gap-8 flex-row order-2 md:order-1 justify-center items-center md:w-[20px] w-full md:bg-[#fff] bg-transparent '>
-                  {steps.map((item, index) => {
+                  {/* {steps.map((item, index) => {
                     return (
                       <div
                         key={item.id}
@@ -69,7 +73,7 @@ const Hero = () => {
                         }  md:w-[5px] md:h-[80px] w-[40px] h-[5px] md:mt-0 sm:mt-8 `}
                       ></div>
                     )
-                  })}
+                  })} */}
                 </div>
                 <div
                   className={`justify-center items-center flex transition-transform h-[200px]  md:h-[300px] duration-400 order-1 md:order-2 w-full ${vertical} `}

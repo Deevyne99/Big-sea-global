@@ -5,7 +5,7 @@ const ServicesCard = ({ title, description, icon }) => {
   return (
     <div className='bg-[#fff]  px-4 py-8 flex flex-col w-full  rounded-md ]'>
       <div className='flex flex-col justify-center items-center'>
-        <div className='h-12 w-12 rounded-full p-2 bg-[#122a72] justify-center flex items-center text-xl text-[#fff]'>
+        <div className='h-12 w-12 rounded-full p-2 bg-[#60a5fa] justify-center flex items-center text-xl text-[#fff]'>
           {icon}
         </div>
       </div>
